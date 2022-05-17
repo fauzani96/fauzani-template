@@ -1,13 +1,16 @@
 import {ThemeProvider} from '@mui/material'
 import React from 'react'
+import {BrowserRouter} from 'react-router-dom'
 import {theme} from './config/theme.config'
-import Home from './page/home/Home.component'
+import Router from './route'
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Home />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 

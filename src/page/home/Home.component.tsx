@@ -1,5 +1,6 @@
 import React from 'react'
 import {Avatar, Button, Icon, Typography} from '@mui/material'
+import {Link, Outlet} from 'react-router-dom'
 
 function Home() {
   return (
@@ -17,6 +18,9 @@ function Home() {
       <Button variant="contained" color="primary">
         button example yuk
       </Button>
+      <Link to="/collection">Collection</Link>
+      <Link to="/">Back!</Link>
+      <Outlet />
     </div>
   )
 }
